@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery Girl</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+ 
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #551A8B;
+    border: solid 3px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+<div id="flip"><h2 style="color: #fff;" >Here is what this does<br>(Click Me)</h2></div>
+<div id="panel"><h1 style="color: #fff;" >Ha Ya Doin?</h1>
+<img src="images/jqgirl.jpg" alt="JQuery Tee Shirt" >
+<h2 style="color: #fff;" >Pretty Cool...</h2>
+<p>
+      <a href="http://validator.w3.org/check?uri=referer">
+        <img width="88" height="31" alt="Valid html 5" src="images/html5.jpg" />
+      </a>
+    </p>
+</div>
+
+
+</body>
+</html>
